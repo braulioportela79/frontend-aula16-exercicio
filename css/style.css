@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -11,4 +11,97 @@ body {
   font-style: normal;
   font-weight: normal;
   background: #ffffff;
+}
+
+header {
+  background: #00669f;
+  height: 6.45rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-left: 0.62rem;
+}
+
+.logo p {
+  color: #fff;
+  font-size: 1.87rem;
+  margin-left: 1.87rem;
+}
+
+.discountBar {
+  background: #1cd1b0;
+  height: 1.45rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1.68rem;
+}
+
+main {
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 38.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 4.5rem;
+  font-weight: 700;
+  font-family: Inter;
+  margin-bottom: 3.43rem;
+}
+
+input {
+  height: 3.75rem;
+  border: 1.53px solid #000;
+  padding-left: 1.68rem;
+  margin-bottom: 1.25rem;
+}
+
+input::placeholder {
+  color: #000;
+  font-family: Karla;
+  font-size: 1.25rem;
+}
+
+button {
+  background: #1cd1b0;
+  border-radius: 23.011px;
+  height: 53.79px;
+  border: none;
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #00669f;
+  font-weight: bold;
+}
+
+footer {
+  height: 3.81rem;
+  background: #00669f;
+  color: #fff9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
