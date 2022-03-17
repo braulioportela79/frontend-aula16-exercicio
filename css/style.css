@@ -109,7 +109,8 @@ h1 {
   margin-bottom: 3.43rem;
 }
 
-input {
+input,
+select {
   height: 3.75rem;
   border: 1.53px solid #000;
   padding-left: 1.68rem;
@@ -120,6 +121,23 @@ input::placeholder {
   color: #000;
   font-family: Karla;
   font-size: 1.25rem;
+}
+
+select {
+  color: #000;
+  font-family: Karla;
+  font-size: 1.25rem;
+}
+
+option {
+  color: #000;
+  font-family: Karla;
+  font-size: 1.25rem;
+}
+
+.registerButtons {
+  display: flex;
+  gap: 20px;
 }
 
 button {
@@ -133,6 +151,35 @@ button {
   cursor: pointer;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
+}
+.registerButtons button {
+  width: 50%;
+}
+
+.clear {
+  background: #888888;
+  border-radius: 23.011px;
+  font-family: Karla;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+.register {
+  background: #1cd1b0;
+  border-radius: 23.011px;
+  font-family: Karla;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000;
 }
 
 form a {
