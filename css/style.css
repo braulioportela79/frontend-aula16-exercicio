@@ -59,14 +59,6 @@ main {
   align-items: center;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 850px;
-  gap: 50px;
-  justify-content: center;
-}
-
 form {
   width: 50%;
   display: flex;
@@ -126,6 +118,14 @@ footer {
 }
 
 /* CARDS STYLE */
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 850px;
+  gap: 50px;
+  justify-content: center;
+}
 
 .card {
   width: 340px;
