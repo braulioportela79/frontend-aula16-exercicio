@@ -34,6 +34,14 @@ header {
   margin-left: 1.87rem;
 }
 
+.logo a {
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .discountBar {
   background: #1cd1b0;
   height: 1.45rem;
@@ -48,17 +56,28 @@ main {
   margin-top: 10vh;
   margin-bottom: 10vh;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 850px;
+  gap: 50px;
+  justify-content: center;
+}
+
 form {
-  width: 38.8rem;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
 
-label {
+form p {
+  text-align: center;
+}
+
+h1 {
   font-size: 4.5rem;
   font-weight: 700;
   font-family: Inter;
@@ -91,7 +110,7 @@ button {
   margin-bottom: 1.25rem;
 }
 
-a {
+form a {
   text-decoration: none;
   color: #00669f;
   font-weight: bold;
@@ -104,4 +123,140 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* CARDS STYLE */
+
+.card {
+  width: 340px;
+  background: #f3f3f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 150px;
+}
+
+.arlequina {
+  background-image: url('../img/headerCard02.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.batman {
+  background-image: url('../img/headerCard01.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mulherMaravilha {
+  background-image: url('../img/headerCard03.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+}
+
+.superman {
+  background-image: url('../img/headerCard04.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+}
+
+.cardHeader img {
+  width: 138px;
+}
+
+.like__button {
+  display: inline-block;
+  position: relative;
+  top: 18px;
+  left: 24px;
+  cursor: pointer;
+}
+
+.cardContent {
+  margin-top: 110px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardHeader img {
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.cardHeader span {
+  margin-top: 23px;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.cardDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.cardDescription span {
+  width: 300px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  min-height: 120px;
+}
+
+.cardButton {
+  margin: auto;
+  display: flex;
+  width: 145px;
+  height: 54px;
+  background: #00669f;
+  margin-top: 23px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.cardButton span {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #f3f3f3;
+}
+
+@media (max-width: 914px) {
+  .discountBar {
+    height: 38px;
+  }
+
+  header {
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    width: 750px;
+  }
+}
+
+@media (max-width: 496px) {
+  .discountBar {
+    height: 55px;
+  }
+
+  header {
+    height: 135px;
+  }
 }
