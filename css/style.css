@@ -17,6 +17,9 @@ header {
   background: #00669f;
   height: 6.45rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 .logo {
@@ -36,7 +39,6 @@ header {
 
 .logo a {
   text-decoration: none;
-  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,12 +53,43 @@ header {
   padding-left: 1.68rem;
 }
 
+nav {
+  height: 2.5rem;
+  background: #001d2d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
 main {
   display: flex;
   margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
   justify-content: center;
   align-items: center;
+}
+
+.addButton {
+  position: fixed;
+  left: 85vw;
+  top: 500px;
+}
+
+.addButtonMobile {
+  display: none;
 }
 
 form {
@@ -131,7 +164,7 @@ footer {
   width: 340px;
   background: #f3f3f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .arlequina {
@@ -232,6 +265,16 @@ footer {
   color: #f3f3f3;
 }
 
+@media (max-width: 1070px) {
+  .addButton {
+    left: 92vw;
+  }
+
+  .addButton img {
+    width: 50px;
+  }
+}
+
 @media (max-width: 914px) {
   .discountBar {
     height: 38px;
@@ -239,6 +282,27 @@ footer {
 
   header {
     height: 120px;
+  }
+}
+
+@media (max-width: 860px) {
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+  .addButton {
+    display: none;
+  }
+
+  .addButtonMobile {
+    display: block;
+    position: relative;
+    /* bottom: -500px; */
+    /* top: 0; */
   }
 }
 
