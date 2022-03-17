@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Super-heróis - Aula 16</title>
+  </head>
+  <body>
+    <header>
+      <div class="discountBar">
+        Braulio Portela, Geovane Motta, Andre Goldoni, Gustavo Melchior, Douglas
+        Nepomuceno, Guilherme Moreira, João Geovani, Karber Isaiac
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="./img/logo.png" alt="" />
+          <p>Nome da Loja</p></a
+        >
+      </div>
+    </header>
+    <main>
+      <form action="index.html">
+        <h1>Registro</h1>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Nome e Sobrenome"
+        />
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Senha"
+        />
+        <select name="country" id="country">
+          <option value="" disabled selected hidden>País</option>
+          <option value="brazil">Brasil</option>
+          <option value="argentina">Argentina</option>
+          <option value="usa">Estados Unidos</option>
+        </select>
+        <div class="registerButtons">
+          <button type="clear" class="clear">Limpar</button>
+          <button type="submit" class="register">Registrar</button>
+        </div>
+        <p>Já possui uma conta? <a href="login.html">Entrar</a></p>
+      </form>
+    </main>
+    <footer>Todos os direitos reservados a FRONT END 1</footer>
+  </body>
+</html>
