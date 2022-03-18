@@ -82,6 +82,102 @@ main {
   align-items: center;
 }
 
+.descArleq {
+  background-image: url('../img/bgarlequina.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.descBatman {
+  background-image: url('../img/bgbatman.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.descCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 546px;
+  height: 600px;
+  background: #F3F3F3;
+  border-radius: 45px;
+  margin-top: 25vh;
+  margin-bottom: 5vh;
+}
+
+.descImg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: -60px;
+}
+
+.descImg img {
+  border-radius: 50%;
+}
+
+.likeBotao {
+  display: inline-block;
+  position: relative;
+  top: -145px;
+  left: 60px;
+  cursor: pointer;
+}
+
+.descCardTexto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.descCardTexto h3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  color: #2C0187;
+}
+
+.descCardTexto p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  background: #2C0187;
+  border-radius: 0px 0px 45px 45px;
+}
+
+.backButton a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.armas {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
 .addButton {
   position: fixed;
   left: 85vw;
