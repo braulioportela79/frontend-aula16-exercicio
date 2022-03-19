@@ -115,7 +115,8 @@ main {
   align-items: center;
   flex-direction: column;
   position: relative;
-  top: -60px;
+  /* top: -60px; */
+  /* transform: translate(0, -50%); */
 }
 
 .descImg img {
