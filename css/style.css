@@ -184,6 +184,11 @@ main {
   top: 500px;
 }
 
+.addButton a:hover {
+  content: url('../img/addButtonHover.png');
+  cursor: pointer;
+}
+
 .addButtonMobile {
   display: none;
 }
@@ -410,11 +415,7 @@ footer {
 
 @media (max-width: 1070px) {
   .addButton {
-    left: 92vw;
-  }
-
-  .addButton img {
-    width: 50px;
+    left: 88vw;
   }
 }
 
@@ -440,12 +441,21 @@ footer {
   .addButton {
     display: none;
   }
+  .addButton a:hover {
+    content: url('../img/addButtonHover.png');
+    cursor: pointer;
+  }
 
   .addButtonMobile {
     display: block;
     position: relative;
     /* bottom: -500px; */
     /* top: 0; */
+  }
+
+  .addButtonMobile a:hover {
+    content: url('../img/addButtonHover.png');
+    cursor: pointer;
   }
 }
 
@@ -649,7 +659,6 @@ input[type='file']::file-selector-button {
   margin-bottom: 10px;
 }
 
-
 .types label {
   display: flex;
   flex-direction: row;
@@ -701,5 +710,5 @@ input[type='file']::file-selector-button {
 .addHero button:hover {
   background: #001d2d;
   border-radius: 23.011px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
