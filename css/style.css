@@ -104,7 +104,7 @@ main {
   flex-direction: column;
   width: 546px;
   height: 600px;
-  background: #F3F3F3;
+  background: #f3f3f3;
   border-radius: 45px;
   margin-top: 25vh;
   margin-bottom: 5vh;
@@ -142,7 +142,7 @@ main {
   line-height: 38px;
   margin-top: -20px;
   margin-bottom: 40px;
-  color: #2C0187;
+  color: #2c0187;
 }
 
 .descCardTexto p {
@@ -160,7 +160,7 @@ main {
   text-align: center;
   width: 100%;
   height: 150px;
-  background: #2C0187;
+  background: #2c0187;
   border-radius: 0px 0px 45px 45px;
 }
 
@@ -294,7 +294,6 @@ footer {
 }
 
 /* CARDS STYLE */
-
 
 .cardsContainer {
   display: flex;
@@ -467,4 +466,240 @@ footer {
   header {
     height: 135px;
   }
+}
+
+.addHero {
+  width: 954px;
+  height: 832px;
+  background: #00669f;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 49.0901px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addHero h2 {
+  color: #fbfffd;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.addHero h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  /* background-color: green; */
+}
+
+.leftForm,
+.rightForm {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.rightForm {
+  display: flex;
+  flex-direction: column;
+  /* background-color: yellow; */
+  /* background-color: red; */
+  width: 50%;
+}
+
+.leftForm,
+.rightForm label {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.leftForm input {
+  margin-top: 15px;
+  background: #ffffff;
+  border: 1.53407px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 15.3407px;
+}
+
+.leftForm #name {
+  height: 63px;
+}
+
+.leftForm #date {
+  padding-right: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.leftForm #desc {
+  height: 307px;
+  background: #ffffff;
+  border: 1.53407px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15.3407px;
+}
+
+textarea {
+  resize: none;
+  height: 307px;
+  background: #ffffff;
+  border: 1.53407px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15.3407px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+textarea::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+.rightForm select {
+  margin-top: 15px;
+  background: #ffffff;
+  border: 1.53407px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 15.3407px;
+}
+
+select > option:not(:first-of-type) {
+  color: black;
+}
+
+input[type='file'] {
+  border: none;
+  margin-top: 30px;
+  padding-left: 0;
+  content: 'naome';
+}
+
+input[type='file']::file-selector-button {
+  background: #cecece;
+  border-radius: 5px;
+  width: 223px;
+  height: 32px;
+}
+
+.powers {
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.powers label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.powers label:first-child {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.powers input {
+  margin-bottom: 0;
+  height: 30px;
+  margin-right: 20px;
+  width: 20px;
+}
+
+.types {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+
+.types label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.types label:first-child {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.types input {
+  margin-bottom: 0;
+  height: 30px;
+  margin-right: 20px;
+  width: 20px;
+}
+
+.addHero button {
+  background: #1cd1b0;
+  border-radius: 23.011px;
+  font-family: Karla;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  width: 466px;
+  height: 87px;
+}
+
+.addHero button:hover {
+  background: #001d2d;
+  border-radius: 23.011px;
+  color: #FFFFFF;
 }
